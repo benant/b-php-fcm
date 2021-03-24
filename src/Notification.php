@@ -1,5 +1,5 @@
 <?php
-namespace paragraph1\phpFCM;
+namespace benant\bPhpFCM;
 
 /**
  * @link https://firebase.google.com/docs/cloud-messaging/http-server-ref#notification-payload-support
@@ -16,11 +16,10 @@ class Notification implements \JsonSerializable
     private $tag;
     private $image;
 
-    public function __construct($title, $body, $image = '')
+    public function __construct($title, $body)
     {
         $this->title = $title;
         $this->body = $body;
-        $this->image = $image;
     }
 
     /**
@@ -28,7 +27,7 @@ class Notification implements \JsonSerializable
      *
      * @param string $title
      *
-     * @return \paragraph1\phpFCM\Notification
+     * @return \benant\bPhpFCM\Notification
      */
     public function setTitle($title)
     {
@@ -41,7 +40,7 @@ class Notification implements \JsonSerializable
      *
      * @param string $body
      *
-     * @return \paragraph1\phpFCM\Notification
+     * @return \benant\bPhpFCM\Notification
      */
     public function setBody($body)
     {
@@ -54,7 +53,7 @@ class Notification implements \JsonSerializable
      *
      * @param integer $badge
      *
-     * @return \paragraph1\phpFCM\Notification
+     * @return \benant\bPhpFCM\Notification
      */
     public function setBadge($badge)
     {
@@ -67,7 +66,7 @@ class Notification implements \JsonSerializable
      *
      * @param string $icon the drawable name without .xml
      *
-     * @return \paragraph1\phpFCM\Notification
+     * @return \benant\bPhpFCM\Notification
      */
     public function setIcon($icon)
     {
@@ -80,7 +79,7 @@ class Notification implements \JsonSerializable
      *
      * @param string $color in #rrggbb format
      *
-     * @return \paragraph1\phpFCM\Notification
+     * @return \benant\bPhpFCM\Notification
      */
     public function setColor($color)
     {
@@ -94,7 +93,7 @@ class Notification implements \JsonSerializable
      *
      * @param string $actionName on android: intent name, on ios: category in apns payload
      *
-     * @return \paragraph1\phpFCM\Notification
+     * @return \benant\bPhpFCM\Notification
      */
     public function setClickAction($actionName)
     {
@@ -108,7 +107,7 @@ class Notification implements \JsonSerializable
      *
      * @param string $tag
      *
-     * @return \paragraph1\phpFCM\Notification
+     * @return \benant\bPhpFCM\Notification
      */
     public function setTag($tag)
     {
@@ -122,11 +121,22 @@ class Notification implements \JsonSerializable
      *
      * @param string $sound a sounds filename
      *
-     * @return \paragraph1\phpFCM\Notification
+     * @return \benant\bPhpFCM\Notification
      */
     public function setSound($sound)
     {
         $this->sound = $sound;
+        return $this;
+    }
+
+    /**
+     * 이미지 설정
+     * @param string $image 이미지 URL
+     * @return \benant\bPhpFCM\Notification
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
         return $this;
     }
 

@@ -1,5 +1,5 @@
 <?php
-namespace paragraph1\phpFCM;
+namespace benant\bPhpFCM;
 
 /**
  * @author kbielenberg
@@ -13,7 +13,7 @@ interface ClientInterface
      *
      * @param string $apiKey
      *
-     * @return \paragraph1\phpFCM\Client
+     * @return \benant\bPhpFCM\Client
      */
     public function setApiKey($apiKey);
 
@@ -23,7 +23,7 @@ interface ClientInterface
      *
      * @param string $url
      *
-     * @return \paragraph1\phpFCM\Client
+     * @return \benant\bPhpFCM\Client
      */
     public function setProxyApiUrl($url);
 

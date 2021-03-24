@@ -1,11 +1,11 @@
 <?php
-namespace paragraph1\phpFCM\Tests;
+namespace benant\bPhpFCM\Tests;
 
-use paragraph1\phpFCM\Recipient\Recipient;
-use paragraph1\phpFCM\Message;
-use paragraph1\phpFCM\Recipient\Topic;
-use paragraph1\phpFCM\Notification;
-use paragraph1\phpFCM\Recipient\Device;
+use benant\bPhpFCM\Recipient\Recipient;
+use benant\bPhpFCM\Message;
+use benant\bPhpFCM\Recipient\Topic;
+use benant\bPhpFCM\Notification;
+use benant\bPhpFCM\Recipient\Device;
 
 class MessageTest extends PhpFcmTestCase
 {

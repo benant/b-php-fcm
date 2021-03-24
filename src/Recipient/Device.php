@@ -1,5 +1,5 @@
 <?php
-namespace paragraph1\phpFCM\Recipient;
+namespace benant\bPhpFCM\Recipient;
 
 class Device implements Recipient
 {

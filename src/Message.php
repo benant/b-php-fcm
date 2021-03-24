@@ -1,9 +1,9 @@
 <?php
-namespace paragraph1\phpFCM;
+namespace benant\bPhpFCM;
 
-use paragraph1\phpFCM\Recipient\Recipient;
-use paragraph1\phpFCM\Recipient\Topic;
-use paragraph1\phpFCM\Recipient\Device;
+use benant\bPhpFCM\Recipient\Recipient;
+use benant\bPhpFCM\Recipient\Topic;
+use benant\bPhpFCM\Recipient\Device;
 
 /**
  * @author palbertini
@@ -43,7 +43,7 @@ class Message implements \JsonSerializable
      * @throws \UnexpectedValueException
      * @throws \InvalidArgumentException
      *
-     * @return \paragraph1\phpFCM\Message
+     * @return \benant\bPhpFCM\Message
      */
     public function addRecipient(Recipient $recipient)
     {
@@ -74,7 +74,7 @@ class Message implements \JsonSerializable
      *
      * @param string $collapseKey
      *
-     * @return \paragraph1\phpFCM\Message
+     * @return \benant\bPhpFCM\Message
      */
     public function setCollapseKey($collapseKey)
     {
@@ -88,7 +88,7 @@ class Message implements \JsonSerializable
      *
      * @param string $priority use the class constants
      *
-     * @return \paragraph1\phpFCM\Message
+     * @return \benant\bPhpFCM\Message
      */
     public function setPriority($priority)
     {
@@ -101,7 +101,7 @@ class Message implements \JsonSerializable
      *
      * @param integer $ttl
      *
-     * @return \paragraph1\phpFCM\Message
+     * @return \benant\bPhpFCM\Message
      */
     public function setTimeToLive($ttl)
     {
@@ -115,7 +115,7 @@ class Message implements \JsonSerializable
      *
      * @param bool $delayWhileIdle
      *
-     * @return \paragraph1\phpFCM\Message
+     * @return \benant\bPhpFCM\Message
      */
     public function setDelayWhileIdle($delayWhileIdle)
     {
@@ -126,7 +126,7 @@ class Message implements \JsonSerializable
     /**
      * @see https://firebase.google.com/docs/cloud-messaging/concept-options#collapsible_and_non-collapsible_messages
      *
-     * @return \paragraph1\phpFCM\Message
+     * @return \benant\bPhpFCM\Message
      */
     public function setContentAvailable() {
         $this->contentAvailableFlag = TRUE;

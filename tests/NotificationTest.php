@@ -1,7 +1,7 @@
 <?php
-namespace paragraph1\phpFCM\Tests;
+namespace benant\bPhpFCM\Tests;
 
-use paragraph1\phpFCM\Notification;
+use benant\bPhpFCM\Notification;
 
 class NotificationTest extends PhpFcmTestCase
 {

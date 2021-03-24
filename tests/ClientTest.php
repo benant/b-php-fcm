@@ -1,9 +1,9 @@
 <?php
-namespace paragraph1\phpFCM\Tests;
+namespace benant\bPhpFCM\Tests;
 
-use paragraph1\phpFCM\Client;
-use paragraph1\phpFCM\Recipient\Topic;
-use paragraph1\phpFCM\Message;
+use benant\bPhpFCM\Client;
+use benant\bPhpFCM\Recipient\Topic;
+use benant\bPhpFCM\Message;
 
 use GuzzleHttp;
 use GuzzleHttp\Psr7\Response;

@@ -1,5 +1,5 @@
 <?php
-namespace paragraph1\phpFCM;
+namespace benant\bPhpFCM;
 
 use GuzzleHttp;
 
@@ -30,7 +30,7 @@ class Client implements ClientInterface
      *
      * @param string $apiKey
      *
-     * @return \paragraph1\phpFCM\Client
+     * @return \benant\bPhpFCM\Client
      */
     public function setApiKey($apiKey)
     {
@@ -43,7 +43,7 @@ class Client implements ClientInterface
      *
      * @param string $url
      *
-     * @return \paragraph1\phpFCM\Client
+     * @return \benant\bPhpFCM\Client
      */
     public function setProxyApiUrl($url)
     {

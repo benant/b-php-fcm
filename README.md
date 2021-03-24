@@ -1,9 +1,8 @@
-# phpFCM
-[![Build Status](https://travis-ci.org/Paragraph1/php-fcm.svg?branch=master)](https://travis-ci.org/Paragraph1/php-fcm)
-[![Coverage Status](https://coveralls.io/repos/github/Paragraph1/php-fcm/badge.svg?branch=master)](https://coveralls.io/github/Paragraph1/php-fcm?branch=master)
-[![Latest Stable Version](https://poser.pugx.org/paragraph1/php-fcm/v/stable)](https://packagist.org/packages/paragraph1/php-fcm)
-[![Total Downloads](https://poser.pugx.org/paragraph1/php-fcm/downloads)](https://packagist.org/packages/paragraph1/php-fcm)
-[![License](https://poser.pugx.org/paragraph1/php-fcm/license)](https://packagist.org/packages/paragraph1/php-fcm)
+# bPhpFCM
+[![License](https://poser.pugx.org/benant/b-php-fcm/license)](https://packagist.org/packages/benant/php-fcm)
+
+This repository has forked version 0.7 of Paragraph1/php-fcm.
+https://github.com/Paragraph1/php-fcm
 
 PHP application server implementation for Firebase Cloud Messaging.
 - supports device and topic messages
@@ -18,23 +17,23 @@ The recommended way of installing is using Composer.
 
 command line
 ```
-composer require paragraph1/php-fcm
+composer require benant/php-fcm
 ```
 
 composer.json
 ```
 "require": {
-    "paragraph1/php-fcm": "*"
+    "benant/php-fcm": "*"
 }
 ```
 
 #Send to Device
 also see https://firebase.google.com/docs/cloud-messaging/downstream
 ```php
-use paragraph1\phpFCM\Client;
-use paragraph1\phpFCM\Message;
-use paragraph1\phpFCM\Recipient\Device;
-use paragraph1\phpFCM\Notification;
+use benant\phpFCM\Client;
+use benant\phpFCM\Message;
+use benant\phpFCM\Recipient\Device;
+use benant\phpFCM\Notification;
 
 require_once 'vendor/autoload.php';
 
@@ -60,10 +59,10 @@ var_dump($response->getStatusCode());
 #Send to topic
 also see https://firebase.google.com/docs/cloud-messaging/topic-messaging
 ```php
-use paragraph1\phpFCM\Client;
-use paragraph1\phpFCM\Message;
-use paragraph1\phpFCM\Recipient\Topic;
-use paragraph1\phpFCM\Notification;
+use benant\phpFCM\Client;
+use benant\phpFCM\Message;
+use benant\phpFCM\Recipient\Topic;
+use benant\phpFCM\Notification;
 
 require_once 'vendor/autoload.php';
 
